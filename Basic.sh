@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo 'Linux Hardening Script - Created by J3R August 2022'
 echo 'Enabling Firewall'
 sudo ufw enable
 wait
