@@ -6,8 +6,10 @@ echo 'List of Users:'
 sudo ls /home
 echo 'Do you want to delete a user? y/n'
 read delyn
-if [ "$delyn" == "y" ]
-then 
+while [ "$delyn" == "y" ]
+do
   echo "Username to delete:"
   read username
   userdel $username
+  echo "Delete another user?"
+done
