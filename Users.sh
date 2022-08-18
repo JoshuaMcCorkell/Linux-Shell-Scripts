@@ -10,6 +10,7 @@ while [ "$delyn" == "y" ]
 do
   echo "Username to delete:"
   read username
-  userdel $username
+  sudo userdel $username
   echo "Delete another user?"
+  read delyn
 done
